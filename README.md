@@ -27,8 +27,8 @@ Before diving into Angular, make sure you have:
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
-    git clone https://github.com/your-username/learn-angular-journey.git
-    cd learn-angular-journey
+    git clone https://github.com/meAltf/learn_Angular.git
+    cd learn_Angular
 
 ### 2️⃣ Run JavaScript files
 Open `.js` files inside `javascript-basics/` in browser console or run with Node:
