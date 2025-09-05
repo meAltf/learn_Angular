@@ -1,0 +1,1 @@
+console.log("Learning Javascript, then typescript, then Angular");
