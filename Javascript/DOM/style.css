@@ -8,16 +8,16 @@
     background-color: brown;
 }
 
-body{
+body {
     background-color: pink;
 }
 
-button{
+button {
     background-color: purple;
     color: white;
 }
 
-.heading-class{
+.heading-class {
     text-decoration: wavy;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
