@@ -45,6 +45,6 @@ let student = {
     isPass: true
 };
 
-for(let key in student){
+for (let key in student) {
     console.log("key= " + key + " " + "Value= " + student[key]);
 }
