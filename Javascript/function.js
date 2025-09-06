@@ -36,3 +36,35 @@ const greet = () => {
     console.log("Hello Robert");
 }
 greet();
+
+
+
+// forEach loop in Arrays
+// arr.forEach(callBackFunction) : A callback function is a function that passed as an argument to another function.
+
+let arr = [1, 2, 3, 4, 5];
+arr.forEach(function printVal(val) { // value at each index
+    console.log(val);
+});
+
+// using arrow function
+arr.forEach((val) => {
+    console.log(val);
+});
+
+
+// example
+let cities = ["chennai", "mumbai", "delhi", "bihar"];
+cities.forEach((elem) => {
+    console.log(elem.toUpperCase());
+});
+
+// forEach variant
+cities.forEach((elem, idx) => {
+    console.log(elem.toUpperCase(), idx);
+});
+
+
+cities.forEach((elem, idx, cities) => {
+    console.log(elem.toUpperCase(), idx, cities);
+});
