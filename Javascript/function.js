@@ -68,3 +68,36 @@ cities.forEach((elem, idx) => {
 cities.forEach((elem, idx, cities) => {
     console.log(elem.toUpperCase(), idx, cities);
 });
+
+
+// some more Array methods
+
+// 1. map | to create a copy of array
+let arr1 = [2, 4, 6, 8, 10];
+let newArr1 = arr1.map((val) => {
+    return val * val;
+});
+console.log(arr1);
+console.log(newArr1);
+
+// 2. filter | to create a new array based on some filter condition
+let arr2 = [2, 3, 4, 5, 6, 7, 8, 10];
+let newArr2 = arr2.filter((val) =>{
+    return val % 2 !== 0;
+});
+console.log(newArr2);
+
+// 3. reduce | perform some operation and reduces the array to a single value, It returns a single value
+let arr3 = [2, 4, 6, 10];
+const output = arr3.reduce((result, curr) => {
+    return result + curr;
+});
+console.log(output);
+
+
+// print largest in array
+let arr4 = [2, 3, 4, 5, 600, 7, 8, 10];
+const maxNum = arr4.reduce((prev, curr) => {
+    return prev > curr ? prev : curr;
+});
+console.log(maxNum);
