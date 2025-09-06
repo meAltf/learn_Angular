@@ -26,5 +26,15 @@ let parahs = document.getElementsByTagName("p");
 console.dir(parahs);
 
 
+// 2. query selector
+// document.querySelector("myId/myClass/myTag") or document.querySelectorAll("myId/myClass/myTag");
+
+let firstEle = document.querySelector("p"); // first matching element
+console.dir(firstEle);
+
+let allEle = document.querySelectorAll("p");
+console.dir(allEle);
+
+
 
 
