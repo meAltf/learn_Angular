@@ -1,0 +1,16 @@
+#h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: aquamarine;
+}
