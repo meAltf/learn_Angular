@@ -52,3 +52,37 @@ function getData(dataId, getNextData) {
         }, 5000);
     });
 }
+
+
+/**
+
+- .then( ) & .catch( )
+
+promise.then( ( res ) => { .... } )
+promise.catch( ( err ) ) => { .... } )
+
+**/
+
+const getPromiseRes = () => {
+    return new Promise((resolve, reject) => {
+        console.log("I am a promise");
+        resolve("success");
+    });
+}
+
+let promiseRes = getPromiseRes();
+promiseRes.then((res) => {
+    console.log("promise fulfilled", res);
+});
+
+const getPromiseRej = () => {
+    return new Promise((resolve, reject) => {
+        console.log("I am a promise");
+        reject("Network Error!");
+    });
+}
+
+let promiseRej = getPromiseRej();
+promiseRej.then((res) => {
+    console.log("promise rejected", res);
+});
