@@ -35,6 +35,11 @@ console.dir(firstEle);
 let allEle = document.querySelectorAll("p");
 console.dir(allEle);
 
+console.dir(firstEle.tagName);
+
+let childrenColl = document.querySelector("div").children;
+console.dir(childrenColl);
+
 
 
 
