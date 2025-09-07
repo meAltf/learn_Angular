@@ -37,3 +37,18 @@ let promise3 = new Promise((resolve, reject) => {
     reject("Some Error Occured!");
 });
 console.log(promise3);
+
+
+// Example : 2
+
+function getData(dataId, getNextData) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log(`Given dataId is ${dataId}`);
+            resolve("success");
+            if (getNextData) {
+                getNextData();
+            }
+        }, 5000);
+    });
+}
