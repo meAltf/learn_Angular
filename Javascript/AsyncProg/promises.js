@@ -83,6 +83,6 @@ const getPromiseRej = () => {
 }
 
 let promiseRej = getPromiseRej();
-promiseRej.then((res) => {
+promiseRej.catch((res) => {
     console.log("promise rejected", res);
 });
