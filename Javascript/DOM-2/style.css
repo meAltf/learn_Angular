@@ -1,0 +1,23 @@
+#heading {
+    color: blue;
+    background-color: yellowgreen;
+}
+
+#heading2 {
+    color: aquamarine;
+    background-color: brown;
+}
+
+body {
+    background-color: pink;
+}
+
+button {
+    background-color: purple;
+    color: white;
+}
+
+.heading-class {
+    text-decoration: wavy;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
