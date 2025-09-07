@@ -16,6 +16,7 @@ div.onmouseover = () => {
 **/
 
 // EVENT object | that contains all event related methods and properties
+/**
 btn1.onclick = (evt) => {
     console.log(evt);
     console.log(evt.type);
@@ -30,3 +31,19 @@ div.onmouseover = (evt) => {
     console.log(evt.target);
     console.log(evt.clientX, evt.clientY);
 };
+
+*/
+
+
+// Event listener | node.addEventListener( event, callback ) | node.removeEventListener( event, callback ) 
+// Note : the callback reference should be same to remove
+
+btn1.addEventListener("click", (evt) => {
+    console.log("button1 was clicked");
+    console.log(evt);
+    console.log(evt.type);
+});
+
+btn1.addEventListener("click", () => {
+    console.log("button1 was clicked- handler2");
+});
