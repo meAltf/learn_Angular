@@ -1,4 +1,4 @@
-const URL = "https://cat-fact.herokuapp.com/facts";
+const URL = "https://cat-fact.herokuapp.com";
 const factPara = document.querySelector("#fact");
 const btn = document.querySelector("#btn");
 
