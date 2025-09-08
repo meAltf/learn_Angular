@@ -53,7 +53,6 @@ function getData(dataId, getNextData) {
     });
 }
 
-
 /**
 
 - .then( ) & .catch( )
@@ -125,3 +124,24 @@ asyncFunc1().then((res) => {
     console.log("fetching data2...");
     asyncFunc2().then((res) => { });
 });
+
+
+// Demo | promise chain
+// getData(100).then((res) => {
+//     console.log(res);
+//     getData(2000).then(() => {
+//         console.log(res);
+//     });
+// });
+
+// cleanest way to write promise-chain | same above code
+getData(3000)
+    .then((res) => {
+        return getData(4000);
+    })
+    .then((res) => {
+        return getData(5000);
+    })
+    .then((res) => {
+        console.log(res);
+    })
