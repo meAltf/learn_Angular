@@ -24,6 +24,17 @@
             <span [class]="spanClassName">Text color apply through class style</span>
         </td>
     </tr>
+
+    <!--Learning ngModel to sync with all binding variables-->
+    <tr>
+        <td>
+            {{rollNum}}
+        </td>
+        <td>
+            <input type="text" [(ngModel)]="rollNum">
+
+        </td>
+    </tr>
 </table>
 
 {{isActive}}
