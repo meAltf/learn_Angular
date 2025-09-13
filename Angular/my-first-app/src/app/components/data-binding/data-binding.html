@@ -10,9 +10,25 @@
             <input type="text" value="{{rollNum}}">
         </td>
         <td>
-            <p>{{currDate}}
+            <p>Today date is: {{currDate}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" [value]="rollNum">
+        </td>
+        <td>
+            <input type="text" [minLength]="minTextLength">
+        </td>
+        <td>
+            <span [class]="spanClassName">Text color apply through class style</span>
         </td>
     </tr>
 </table>
 
 {{isActive}}
+
+
+<!-- we can use directly calculation as well -->
+<p>2 + 2 = {{ 2 + 2 }}</p>
+<p>Uppercase: {{ courseName.toUpperCase() }}</p>

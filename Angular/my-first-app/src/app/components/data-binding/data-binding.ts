@@ -15,10 +15,13 @@ export class DataBinding {
   rollNum: number = 999;
   currDate: Date = new Date();
 
+  minTextLength = 10;
+  spanClassName = 'secondary'
+
   constructor() {
     console.log(this.courseName);
 
-    console.log("AI & ML Eng with Agentic AI");
+    this.courseName = "AI & ML Eng with Agentic AI";
     console.log(this.courseName);
   }
 
