@@ -1,45 +1,46 @@
 <p>data-binding works!</p>
 
 <table style="width: 100%;">
+    <tbody>
+        <tr>
+            <td>
+                <span>{{courseName}}</span>
+            </td>
+            <td>
+                <input type="text" value="{{rollNum}}">
+            </td>
+            <td>
+                <p>Today date is: {{currDate}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" [value]="rollNum">
+            </td>
+            <td>
+                <input type="text" [minLength]="minTextLength">
+            </td>
+            <td>
+                <span [class]="spanClassName">Text color apply through class style</span>
+            </td>
+        </tr>
 
-    <tr>
-        <td>
-            <span>{{courseName}}</span>
-        </td>
-        <td>
-            <input type="text" value="{{rollNum}}">
-        </td>
-        <td>
-            <p>Today date is: {{currDate}}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <input type="text" [value]="rollNum">
-        </td>
-        <td>
-            <input type="text" [minLength]="minTextLength">
-        </td>
-        <td>
-            <span [class]="spanClassName">Text color apply through class style</span>
-        </td>
-    </tr>
-
-    <!--Learning ngModel to sync with all binding variables-->
-    <tr>
-        <td>
-            {{rollNum}}
-        </td>
-        <td>
-            <input type="text" [(ngModel)]="rollNum"/>
-        </td>
-        <td>
-            <input type="checkbox" [(ngModel)]="isActive"/>
-        </td>
-        <td>
-            {{isActive}}
-        </td>
-    </tr>
+        <!--Learning ngModel to sync with all binding variables-->
+        <tr>
+            <td>
+                {{rollNum}}
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="rollNum" />
+            </td>
+            <td>
+                <input type="checkbox" [(ngModel)]="isActive" />
+            </td>
+            <td>
+                {{isActive}}
+            </td>
+        </tr>
+    </tbody>
 </table>
 
 {{isActive}}
@@ -48,3 +49,24 @@
 <!-- we can use directly calculation as well -->
 <p>2 + 2 = {{ 2 + 2 }}</p>
 <p>Uppercase: {{ courseName.toUpperCase() }}</p>
+
+<br><br>
+<hr>
+<hr>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <button (click)="showAlert()">Show Alert</button>
+            </td>
+            <td>
+                <select (change)="onCityChanged()">
+                    <option>Patna</option>
+                    <option>Gopalganj</option>
+                    <option>Siwan</option>
+                </select>
+            </td>
+        </tr>
+    </tbody>
+</table>

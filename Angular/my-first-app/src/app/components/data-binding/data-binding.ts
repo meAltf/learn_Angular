@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding',
-  standalone: true,   
+  standalone: true,
   imports: [FormsModule],
   templateUrl: './data-binding.html',
   styleUrl: './data-binding.css'
 })
-export class DataBinding {
+export class DataBinding implements OnInit {
 
   // string, number, boolean, date
 
@@ -25,6 +25,20 @@ export class DataBinding {
 
     this.courseName = "AI & ML Eng with Agentic AI";
     console.log(this.courseName);
+  }
+
+  ngOnInit(): void {
+    console.log('DataBinding started..')
+  }
+
+  // function in Angular
+  showAlert() {
+    alert('Welcome to Angular 20 Alert!');
+    console.log("check alert")
+  }
+
+  onCityChanged() {
+    alert('Your city has been changed!');
   }
 
 }
