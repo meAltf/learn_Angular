@@ -27,4 +27,19 @@ export class Signal {
     this.cityList.update((old: string[]) => [...old, "Chennai"]);
   }
 
+  addCityFromPage(cityName: string) {
+    this.cityList.update((existing: string[]) => [...existing, cityName])
+  }
+
+  // creating object
+  studentObj = signal<any>({
+    name: 'Robert',
+    city: 'Patna'
+  });
+
+  changeCity() {
+    this.studentObj.update((existingObj: any) => ({ ...existingObj, city:'Gopalganj' }))
+
+  }
+
 }
