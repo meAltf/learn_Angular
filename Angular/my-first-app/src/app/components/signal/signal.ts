@@ -19,4 +19,12 @@ export class Signal {
     this.courseDuration.set("3 Years");
   }
 
+  // exercise using update
+
+  cityList = signal<string[]>(["Mumai", "Pune", "Nagpur"])
+
+  addCity(){
+    this.cityList.update((old: string[])=> [...old, "Chennai"]);
+  }
+
 }
