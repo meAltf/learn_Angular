@@ -32,21 +32,25 @@ export class DataBinding implements OnInit {
   }
 
   // function in Angular
-  showAlert() {
+  showAlert(param?: string) {
     alert('Welcome to Angular 20 Alert!');
     console.log("check alert")
   }
 
-  onCityChanged() {
+  onCityChanged(): void {
     alert('Your city has been changed!');
   }
 
-  onWindowSizeChange(){
+  onWindowSizeChange() {
     console.log("check event at scroll");
   }
 
-  onMouseEnter(){
+  onMouseEnter() {
     console.log('on mouse Enter event');
+  }
+
+  addTwonum(num1: number, num2: number): number {
+    return num1 + num2;
   }
 
 }
