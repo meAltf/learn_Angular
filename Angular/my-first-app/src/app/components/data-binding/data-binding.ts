@@ -41,4 +41,12 @@ export class DataBinding implements OnInit {
     alert('Your city has been changed!');
   }
 
+  onWindowSizeChange(){
+    console.log("check event at scroll");
+  }
+
+  onMouseEnter(){
+    console.log('on mouse Enter event');
+  }
+
 }
