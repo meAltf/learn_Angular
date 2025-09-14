@@ -31,8 +31,13 @@
             {{rollNum}}
         </td>
         <td>
-            <input type="text" [(ngModel)]="rollNum">
-
+            <input type="text" [(ngModel)]="rollNum"/>
+        </td>
+        <td>
+            <input type="checkbox" [(ngModel)]="isActive"/>
+        </td>
+        <td>
+            {{isActive}}
         </td>
     </tr>
 </table>
