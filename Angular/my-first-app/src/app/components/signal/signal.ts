@@ -23,8 +23,8 @@ export class Signal {
 
   cityList = signal<string[]>(["Mumai", "Pune", "Nagpur"])
 
-  addCity(){
-    this.cityList.update((old: string[])=> [...old, "Chennai"]);
+  addCity() {
+    this.cityList.update((old: string[]) => [...old, "Chennai"]);
   }
 
 }
