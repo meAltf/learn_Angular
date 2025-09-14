@@ -38,7 +38,12 @@ export class Signal {
   });
 
   changeCity() {
-    this.studentObj.update((existingObj: any) => ({ ...existingObj, city:'Gopalganj' }))
+    this.studentObj.update((existingObj: any) => ({ ...existingObj, city: 'Gopalganj' }))
+
+    this.studentObj.set({
+      name: 'Robert',
+      city: 'Muzzfarpur'
+    })
 
   }
 
