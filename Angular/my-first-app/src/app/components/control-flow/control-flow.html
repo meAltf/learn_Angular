@@ -41,3 +41,21 @@
         <button class="btn btn-warning mx-2" (click)="changeStatus(false)">Make De-active</button>
     </div>
 </div>
+
+<hr><br>
+<hr>
+
+<div class="row">
+    <div class="col-3">
+        <ul>
+            @for(city of cityList; track $index){
+            <li>{{city}}</li>
+            }
+        </ul>
+    </div>
+    <div class="col-3">
+        @for(city of cityList; track $index){
+        <textarea [value]="city"></textarea>
+        }
+    </div>
+</div>
