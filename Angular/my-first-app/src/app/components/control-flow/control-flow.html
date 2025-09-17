@@ -12,6 +12,14 @@
     <div class="col-3">
         @if (selectedCast == "Other"){
         <input type="text" class="form-control" placeholder="Other value">
+        } @else if(selectedCast == "MNO cast"){
+        <span>MNO</span>
+        } @else if(selectedCast == "DEF cast"){
+        <span>DEF</span>
+        } @else if(selectedCast == "ABC cast"){
+        <span>ABC</span>
+        } @else {
+        <span>Select a cast</span>
         }
     </div>
 </div>
