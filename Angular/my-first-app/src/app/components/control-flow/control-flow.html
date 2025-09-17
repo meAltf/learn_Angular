@@ -11,7 +11,25 @@
     </div>
     <div class="col-3">
         @if (selectedCast == "Other"){
-            <input type="text" class="form-control" placeholder="Other value">
+        <input type="text" class="form-control" placeholder="Other value">
         }
+    </div>
+</div>
+
+<hr><br>
+<hr>
+
+<div class="row">
+    <div class="col-4">
+        @if (isStudentActive() == true){
+        <span class="text-success">Student is Active</span>
+        } @else{
+        <span class="text-danger">Student is De-active</span>
+        }
+    </div>
+
+    <div class="col-4">
+        <button class="btn btn-success" (click)="changeStatus(true)">Make Active</button>
+        <button class="btn btn-warning mx-2" (click)="changeStatus(false)">Make De-active</button>
     </div>
 </div>
